@@ -1,0 +1,32 @@
+@import "vars";
+@import "extends";
+
+body {
+  font-family: sans-serif;
+  min-width: $content-width;
+  color: $color-text;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+a:hover {
+  opacity: .85;
+}
+
+.header {
+  width: 100%;
+  padding: 15px 0 10px;
+}
+
+
+.footer {
+  width: 100%;
+  margin: 150px 0 0;
+  padding: 10px 0;
+}
+
+.footer_version {
+  width: $content-width;
+  margin: 0 auto;
+  text-align: right;
+}

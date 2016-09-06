@@ -1,0 +1,21 @@
+//extends
+@mixin clearfix {
+  &:before, &:after {
+    content: " ";
+    display: table;
+    overflow: hidden;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin align-guide {
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
