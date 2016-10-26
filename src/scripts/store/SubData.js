@@ -3,14 +3,15 @@ import Dispatcher from '../Dispatcher';
 
 class SubData extends ReduceStore {
   getInitialState() {
-    return 'Sub data text';
+    return {text: 'Sub data text'};
   }
 
   reduce(state, action) {
     switch (action.type) {
     case 'LOAD_INIT_DATA':
+      console.log('bbb');
       return Object.assign({}, state, {
-        SubData: action.SubData
+        subData: action.subData
       });
       break;
 
@@ -20,7 +21,7 @@ class SubData extends ReduceStore {
   }
 
   getItems() {
-    return this.getState().SubData;
+    return this.getState().subData;
   }
 }
 

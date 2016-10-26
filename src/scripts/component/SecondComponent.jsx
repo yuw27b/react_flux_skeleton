@@ -5,7 +5,7 @@ const SecondComponent = (props) => {
   return (
     <div id="secondComponent" className="second">
       <h3 className="first_title">Second component</h3>
-      <button className="selectedItems_btn selectedItems_btn-reset" onClick={clickItem}>{subData}</button>
+      <button className="selectedItems_btn selectedItems_btn-reset" onClick={clickItem}>{subData.text}</button>
     </div>
   );
 };

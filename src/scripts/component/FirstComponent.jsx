@@ -7,7 +7,7 @@ const FirstComponent = (props) => {
       <h2 className="first_title">First component</h2>
       {Object.keys(mainData).map((item, idx) => {
         return (
-          <div>{item}:{mainData[item]}</div>
+          <div key={idx}>{item}:{mainData[item]}</div>
         );
       })}
     </div>

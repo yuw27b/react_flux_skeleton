@@ -3,11 +3,11 @@ import {Container} from 'flux/utils';
 
 import ActionCreator from './ActionCreator';
 
-import MainDataStore from './store/mainData';
-import SubDataStore from './store/mainData';
+import MainDataStore from './store/MainData';
+import SubDataStore from './store/SubData';
 
-import Status from './component/First.jsx';
-import DonorList from './component/Second.jsx';
+import FirstComponent from './component/FirstComponent.jsx';
+import SecondComponent from './component/SecondComponent.jsx';
 
 class App extends React.Component {
   constructor() {
@@ -31,7 +31,7 @@ class App extends React.Component {
 }
 
 App.getStores = () => {
-  return [Data1Store, Data2Store];
+  return [MainDataStore, SubDataStore];
 };
 
 App.calculateState = (_prevState) => {

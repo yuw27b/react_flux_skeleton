@@ -4,17 +4,17 @@ export function fetchData() {
 }
 
 function _dummyFetchData() {
-  var dummyData = [
-    {key1: 'value1', key2: 'value2'},
-    'Sub data text'
-  ]
+  const dummyData = {
+    mainData: {key1: 'value1', key2: 'value2'},
+    subData: {text: 'Sub data text'}
+  }
   return new Promise(function(resolve, reject) {
     resolve(dummyData);
   });
 }
 
 function _fetchData() {
-  var url = '/path/to/api'
+  const url = '/path/to/api'
   return new Promise(function(resolve, reject) {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', url);
