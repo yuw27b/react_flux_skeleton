@@ -27,7 +27,7 @@
     "build-js": "mkdir -p ./public/assets/js & browserify src/scripts/main.js -t babelify | uglifyjs > public/assets/js/app.js",
     "dev-js": "watchify src/scripts/main.js -t babelify -o public/assets/js/app.js -v",
     "vendor-css": "cat node_modules/normalize.css/normalize.css node_modules/font-awesome/css/font-awesome.min.css > public/assets/css/vendor.css",
-    "build-css": "mkdir -p ./public/assets/css & node-sass --output-style compressed src/styles/style.scss public/assets/css/style.css",
+    "build-css": "mkdir -p ./public/assets/css & node-sass -q --output-style compressed src/styles/style.scss public/assets/css/style.css",
     "dev-css": "node-sass src/styles/style.scss public/assets/css/style.css -w",
     "copy-html": "cp ./src/*.html ./public/",
     "dev-html": "onchange src/*.html src/api/*.rb -- npm run copy-html"
