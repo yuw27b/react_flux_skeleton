@@ -8,17 +8,17 @@
     "react"
   ],
 
+  "parser": "babel-eslint",
+
   "parserOptions": {
-    "ecmaVersion": 6,
+    "ecmaVersion": 2018,
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "sourceType": "module"
   },
 
-  "globals": {
-    "app": true,
-    "Highcharts": true
-  },
+  "globals": {},
 
   "rules": {
     "quotes": 0,
