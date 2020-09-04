@@ -18,7 +18,7 @@
     "babelify": "^10.0.0",
     "eslint": "^6.0.1",
     "eslint-plugin-react": "^7.14.2",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "onchange": "^6.0.0",
     "watchify": "^3.11.1"
   },
