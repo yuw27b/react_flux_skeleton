@@ -3,24 +3,24 @@
   "version": "0.1.0",
   "description": "React.js skeleton",
   "dependencies": {
-    "flux": "^3.1.3",
+    "flux": "^4.0.1",
     "font-awesome": "^4.7.0",
     "normalize.css": "^8.0.1",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "uglify-es": "^3.3.9"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
-    "@babel/preset-react": "^7.0.0",
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "@babel/preset-react": "^7.12.13",
     "babel-eslint": "^10.0.2",
     "babelify": "^10.0.0",
-    "eslint": "^6.0.1",
-    "eslint-plugin-react": "^7.14.2",
-    "node-sass": "^4.12.0",
-    "onchange": "^6.0.0",
-    "watchify": "^3.11.1"
+    "eslint": "^7.22.0",
+    "eslint-plugin-react": "^7.22.0",
+    "node-sass": "^5.0.0",
+    "onchange": "^7.1.0",
+    "watchify": "^4.0.0"
   },
   "scripts": {
     "start": "npm run dev",
